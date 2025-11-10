@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover beautiful, professional-grade nail products from KCNails UKR. Vegan, cruelty-free formulas with salon-quality finish.">
+    <meta name="keywords" content="nail products, vegan nails, cruelty-free, professional nail polish">
+    <meta name="author" content="KCNails UKR">
+    <title>Blog - KCNails UKR - Professional Nail Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #ec4899 0%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+        }
+        
+        .card-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+        }
+        
+        .button-primary {
+            transition: all 300ms ease;
+        }
+        
+        .button-primary:hover {
+            transform: scale(1.05);
+        }
+        
+        .faq-answer {
+            transition: all 300ms ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .faq-answer:not(.hidden) {
+            max-height: 500px;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="https://ihmunro.github.io/empower-your-style-kcnails-ukr-2025-11-10-1b1jw" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-pink-500 to-orange-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-sparkles text-white text-lg"></i>
+                    </div>
+                    <span class="text-2xl font-bold gradient-text">KCNails</span>
+                </a>
+                
+                <!-- Back Link -->
+                <a href="https://ihmunro.github.io/empower-your-style-kcnails-ukr-2025-11-10-1b1jw" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                    <span>Back</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-20">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="absolute top-20 left-10 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-72 h-72 bg-orange-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-fade-in-up">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                    <span class="block mb-2">Our</span>
+                    <span class="gradient-text">Blog</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed font-light">
+                    Expert insights, tips, and guides to help you master professional nail care and discover the secrets to salon-quality nails at home.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-24 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Welcome to the <span class="gradient-text">KCNails Blog</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Your ultimate resource for nail care mastery, product insights, and beauty tips.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Content Type 1 -->
+                <div class="card-hover bg-gray-800 border border-gray-700 rounded-2xl p-8 hover:border-pink-500 hover:shadow-xl hover:shadow-pink-500/20">
+                    <div class="w-14 h-14 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Expert Guides</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Comprehensive tutorials and step-by-step guides covering everything from nail anatomy to advanced application techniques and professional maintenance practices.
+                    </p>
+                </div>
+                
+                <!-- Content Type 2 -->
+                <div class="card-hover bg-gray-800 border border-gray-700 rounded-2xl p-8 hover:border-orange-500 hover:shadow-xl hover:shadow-orange-500/20">
+                    <div class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5.36 4.24l-.707-.707M5.64 9.464l.707-.707m2.828-2.828l.707.707"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Beauty Tips & Trends</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Discover the latest nail art trends, seasonal color palettes, and insider tips from professional nail technicians and beauty influencers worldwide.
+                    </p>
+                </div>
+                
+                <!-- Content Type 3 -->
+                <div class="card-hover bg-gray-800 border border-gray-700 rounded-2xl p-8 hover:border-pink-500 hover:shadow-xl hover:shadow-pink-500/20">
+                    <div class="w-14 h-14 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Product & Care Stories</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Learn about our ethical practices, sustainable sourcing, customer success stories, and how to get the most out of your KCNails products.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post Section -->
+    <section class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold">
+                    Latest <span class="gradient-text">Articles</span>
+                </h2>
+            </div>
+            
+            <!-- Featured Post -->
+            <div class="card-hover bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-2xl overflow-hidden hover:border-pink-500 hover:shadow-2xl hover:shadow-pink-500/20 mb-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 lg:p-12">
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center space-x-4 mb-6">
+                                <span class="inline-block bg-gradient-to-r from-pink-500 to-orange-500 text-white text-sm font-bold px-4 py-2 rounded-full">Featured</span>
+                                <span class="text-gray-400 text-sm">November 10, 2025</span>
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+                                Getting Started with Our Platform
+                            </h3>
+                            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                                Discover the secrets to salon-quality nails at home. This comprehensive guide explores nail anatomy, growth cycles, and professional preparation techniques including proper filing, cuticle care, and dehydration steps. Master application methods using the three-stroke technique with base coat, color, and top coat. Learn advanced maintenance practices, nutritional support through biotin and protein, and seasonal adjustments for year-round nail health. Address common problems like peeling and brittleness with proven solutions. Explore gel polish options and nail art techniques for special occasions. With consistency, patience, and quality products from KCNails, achieve stunning, healthy nails that rival professional salon results while maintaining ethical beauty standards.
+                            </p>
+                        </div>
+                        <a href="https://ihmunro.github.io/empower-your-style-kcnails-ukr-2025-11-10-1b1jw/blog/getting-started-with-our-platform.html" class="inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-orange-500 text-white px-8 py-4 rounded-full font-bold button-primary hover:shadow-lg hover:shadow-pink-500/50 w-fit">
+                            <span>Read Full Article</span>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="relative h-96 lg:h-auto">
+                        <div class="absolute inset-0 bg-gradient-to-br from-pink-500 to-orange-500 rounded-xl opacity-20"></div>
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=600&fit=crop" alt="Professional nail care" class="relative w-full h-full object-cover rounded-xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Articles Coming Soon -->
+            <div class="text-center py-16">
+                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-12">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m0 0h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">More Articles Coming Soon</h3>
+                    <p class="text-gray-400 text-lg">
+                        We're constantly creating new content to help you master nail care, discover beauty trends, and learn more about ethical nail products. Check back regularly for fresh insights and expert tips.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-24 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Stay Updated with <span class="gradient-text">KCNails</span>
+            </h2>
+            <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                Subscribe to our blog to receive expert nail care tips, product updates, and exclusive beauty insights delivered to your inbox.
+            </p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto" onsubmit="return false;">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email" 
+                    class="flex-1 px-6 py-4 bg-gray-800 border border-gray-700 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-pink-500 transition-colors duration-300"
+                    required
+                >
+                <button 
+                    type="submit" 
+                    class="bg-gradient-to-r from-pink-500 to-orange-500 text-white px-10 py-4 rounded-full font-bold button-primary hover:shadow-lg hover:shadow-pink-500/50"
+                >
+                    Subscribe
+                </button>
+            </form>
+            <p class="text-gray-400 text-sm mt-6">
+                We respect your privacy. Unsubscribe at any time.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1200&h=400&fit=crop" alt="Beautiful nails" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-gray-900/60"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Ready to Transform Your <span class="gradient-text">Nail Game?</span>
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Join thousands of satisfied customers who've discovered the beauty of premium, ethical nail products. Shop KCNails today and experience the difference quality makes.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://kcnailsukr.com/" class="bg-gradient-to-r from-pink-500 to-orange-500 text-white px-10 py-4 rounded-full font-bold text-lg button-primary hover:shadow-2xl hover:shadow-pink-500/50 flex items-center space-x-2">
+                    <span>Shop Now</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <a href="https://ihmunro.github.io/empower-your-style-kcnails-ukr-2025-11-10-1b1jw" class="border-2 border-pink-500 text-pink-400 px-10 py-4 rounded-full font-bold text-lg button-primary hover:bg-pink-500 hover:bg-opacity-10 transition-all duration-300">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-pink-500 to-orange-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-sparkles text-white text-lg"></i>
+                        </div>
+                        <span class="text-2xl font-bold gradient-text">KCNails</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Premium ethical nail products for the modern beauty enthusiast.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
+                            <i class="fab fa-pinterest text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Products</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://kcnailsukr.com/" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Shop All</a></li>
+                        <li><a href="https://kcnailsukr.com/" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">New Arrivals</a></li>
+                        <li><a href="https://kcnailsukr.com/" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Best Sellers</a></li>
+                        <li><a href="https://kcnailsukr.com/" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Collections</a></li>
+                        <li><a href="https://kcnailsukr.com/" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Gift Sets</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://ihmunro.github.io/empower-your-style-kcnails-ukr-2025-11-10-1b1jw" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Sustainability</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Return Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 py-8 border-t border-b border-gray-800">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 text-sm">Email</p>
+                        <a href="mailto:iainhmunro@gmail.com" class="text-white font-semibold hover:text-pink-500 transition-colors duration-300">iainhmunro@gmail.com</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 text-sm">Location</p>
+                        <p class="text-white font-semibold">London, United Kingdom</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-400 text-sm">Support</p>
+                        <p class="text-white font-semibold">24/7 Customer Care</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    &copy; 2025 KCNails UKR. All rights reserved. Made with <span class="text-pink-500">♥</span> for ethical beauty.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="privacy.html" class="text-gray-400 hover:text-pink-500 transition-colors duration-300 text-sm">Privacy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-pink-500 transition-colors duration-300 text-sm">Terms</a>
+                    <a href="blog.html" class="text-gray-400 hover:text-pink-500 transition-colors duration-300 text-sm">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
